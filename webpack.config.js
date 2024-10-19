@@ -6,7 +6,7 @@ export default {
     entry: './src/index.tsx',
     mode: 'development',
     output: {
-        filename: 'bundle.[fullhash].js',
+        filename: 'bundle.js',
         path: path.resolve('./build'),
     },
 
