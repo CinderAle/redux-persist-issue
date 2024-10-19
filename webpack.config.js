@@ -1,4 +1,3 @@
-import Dotenv from 'dotenv-webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
 
@@ -14,7 +13,6 @@ export default {
         new HtmlWebpackPlugin({
             template: './index.html',
         }),
-        new Dotenv(),
     ],
     resolve: {
         modules: ['./', 'src', 'node_modules'],
@@ -26,7 +24,7 @@ export default {
                 test: /\.(js|ts)x?$/,
                 exclude: /node_modules/,
                 use: ['babel-loader'],
-            }
+            },
         ],
     },
 };
